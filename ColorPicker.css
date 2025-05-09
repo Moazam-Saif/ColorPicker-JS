@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #61FFD7,#313335);
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.left-right-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Adjusted for better alignment */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px; /* Increased margin-bottom to add gap */
+}
+
+.it {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+.leftButton{
+    background-color: #61FFD7;
+    color: #fff;
+}
+.rightButton{
+    background-color: #313335;
+    color: #fff;
+}
+
+
+.color-picker {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Matches the button gap for alignment */
+    margin-top: 20px;
+}
+
+.color-picker__input {
+    -webkit-appearance: none; /* Remove default browser styling */
+    -moz-appearance: none; /* For Firefox */
+    appearance: none;
+
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: none; /* Avoids default input box styling */
+    padding: 0;
+}
+
+.color-picker__input::-webkit-color-swatch-wrapper {
+    padding: 0; /* Removes default padding */
+}
+
+.color-picker__input::-webkit-color-swatch {
+    border: none; /* Removes default border around color */
+    border-radius: 50%; /* Ensures the color is circular inside */
+}
+
+.color-picker__input:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.code {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border-left: 2px solid white;
+    padding: 10px;
+    margin-top: 40px;
+    color: white;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
